@@ -13,6 +13,8 @@ Rather than using a separate state register, the switch values themselves act as
 
 ---
 
+![PYNQ-Z2 switch and LEDs](assets/pynq.png)
+
 ## State descriptions and behavior
 
 ### `00`: Static side LEDs
