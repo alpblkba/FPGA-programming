@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xAF0C36E4AD96E549",
+      "boundary_crc": "0x0",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../project_3.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -12,259 +12,13 @@
     },
     "design_tree": {
       "processing_system7_0": "",
-      "task3_0": "",
       "opcode_slice": "",
       "in2_slice": "",
       "in1_slice": "",
       "in0_slice": "",
       "concat_out_52": "",
-      "in0_1_2_concat": ""
-    },
-    "interface_ports": {
-      "DDR_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:ddrx:1.0",
-        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
-        "parameters": {
-          "AXI_ARBITRATION_SCHEME": {
-            "value": "TDM",
-            "value_src": "default"
-          },
-          "BURST_LENGTH": {
-            "value": "8",
-            "value_src": "default"
-          },
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          },
-          "CAS_LATENCY": {
-            "value": "11",
-            "value_src": "default"
-          },
-          "CAS_WRITE_LATENCY": {
-            "value": "11",
-            "value_src": "default"
-          },
-          "CS_ENABLED": {
-            "value": "true",
-            "value_src": "default"
-          },
-          "DATA_MASK_ENABLED": {
-            "value": "true",
-            "value_src": "default"
-          },
-          "DATA_WIDTH": {
-            "value": "8",
-            "value_src": "default"
-          },
-          "MEMORY_TYPE": {
-            "value": "COMPONENTS",
-            "value_src": "default"
-          },
-          "MEM_ADDR_MAP": {
-            "value": "ROW_COLUMN_BANK",
-            "value_src": "default"
-          },
-          "SLOT": {
-            "value": "Single",
-            "value_src": "default"
-          },
-          "TIMEPERIOD_PS": {
-            "value": "1250",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "CAS_N": {
-            "physical_name": "DDR_0_cas_n",
-            "direction": "IO"
-          },
-          "CKE": {
-            "physical_name": "DDR_0_cke",
-            "direction": "IO"
-          },
-          "CK_N": {
-            "physical_name": "DDR_0_ck_n",
-            "direction": "IO"
-          },
-          "CK_P": {
-            "physical_name": "DDR_0_ck_p",
-            "direction": "IO"
-          },
-          "CS_N": {
-            "physical_name": "DDR_0_cs_n",
-            "direction": "IO"
-          },
-          "RESET_N": {
-            "physical_name": "DDR_0_reset_n",
-            "direction": "IO"
-          },
-          "ODT": {
-            "physical_name": "DDR_0_odt",
-            "direction": "IO"
-          },
-          "RAS_N": {
-            "physical_name": "DDR_0_ras_n",
-            "direction": "IO"
-          },
-          "WE_N": {
-            "physical_name": "DDR_0_we_n",
-            "direction": "IO"
-          },
-          "BA": {
-            "physical_name": "DDR_0_ba",
-            "direction": "IO",
-            "left": "2",
-            "right": "0"
-          },
-          "ADDR": {
-            "physical_name": "DDR_0_addr",
-            "direction": "IO",
-            "left": "14",
-            "right": "0"
-          },
-          "DM": {
-            "physical_name": "DDR_0_dm",
-            "direction": "IO",
-            "left": "3",
-            "right": "0"
-          },
-          "DQ": {
-            "physical_name": "DDR_0_dq",
-            "direction": "IO",
-            "left": "31",
-            "right": "0"
-          },
-          "DQS_N": {
-            "physical_name": "DDR_0_dqs_n",
-            "direction": "IO",
-            "left": "3",
-            "right": "0"
-          },
-          "DQS_P": {
-            "physical_name": "DDR_0_dqs_p",
-            "direction": "IO",
-            "left": "3",
-            "right": "0"
-          }
-        }
-      },
-      "FIXED_IO_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:display_processing_system7:fixedio:1.0",
-        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
-        "parameters": {
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "MIO": {
-            "physical_name": "FIXED_IO_0_mio",
-            "direction": "IO",
-            "left": "53",
-            "right": "0"
-          },
-          "DDR_VRN": {
-            "physical_name": "FIXED_IO_0_ddr_vrn",
-            "direction": "IO"
-          },
-          "DDR_VRP": {
-            "physical_name": "FIXED_IO_0_ddr_vrp",
-            "direction": "IO"
-          },
-          "PS_SRSTB": {
-            "physical_name": "FIXED_IO_0_ps_srstb",
-            "direction": "IO"
-          },
-          "PS_CLK": {
-            "physical_name": "FIXED_IO_0_ps_clk",
-            "direction": "IO"
-          },
-          "PS_PORB": {
-            "physical_name": "FIXED_IO_0_ps_porb",
-            "direction": "IO"
-          }
-        }
-      },
-      "GPIO_0_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
-        "port_maps": {
-          "TRI_T": {
-            "physical_name": "GPIO_0_0_tri_t",
-            "direction": "O",
-            "left": "51",
-            "right": "0"
-          }
-        }
-      },
-      "USBIND_0_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:display_processing_system7:usbctrl:1.0",
-        "vlnv": "xilinx.com:display_processing_system7:usbctrl_rtl:1.0",
-        "port_maps": {
-          "PORT_INDCTL": {
-            "physical_name": "USBIND_0_0_port_indctl",
-            "direction": "O",
-            "left": "1",
-            "right": "0"
-          },
-          "VBUS_PWRSELECT": {
-            "physical_name": "USBIND_0_0_vbus_pwrselect",
-            "direction": "O"
-          },
-          "VBUS_PWRFAULT": {
-            "physical_name": "USBIND_0_0_vbus_pwrfault",
-            "direction": "I"
-          }
-        }
-      }
-    },
-    "ports": {
-      "FCLK_CLK0_0": {
-        "type": "clk",
-        "direction": "O",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "design_1_processing_system7_0_1_FCLK_CLK0",
-            "value_src": "default_prop"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "user_prop"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
-      },
-      "FCLK_RESET0_N_0": {
-        "type": "rst",
-        "direction": "O",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
-      }
+      "in0_1_2_concat": "",
+      "task3_0": ""
     },
     "components": {
       "processing_system7_0": {
@@ -1844,49 +1598,6 @@
           }
         }
       },
-      "task3_0": {
-        "vlnv": "xilinx.com:module_ref:task3:1.0",
-        "xci_name": "design_1_task3_0_2",
-        "xci_path": "ip/design_1_task3_0_2/design_1_task3_0_2.xci",
-        "inst_hier_path": "task3_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "task3",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "opcode": {
-            "direction": "I",
-            "left": "2",
-            "right": "0"
-          },
-          "in2": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "in1": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "in0": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "result": {
-            "direction": "O",
-            "left": "23",
-            "right": "0"
-          },
-          "done": {
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          }
-        }
-      },
       "opcode_slice": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "xci_name": "design_1_xlslice_0_0",
@@ -1994,32 +1705,49 @@
             "value": "3"
           }
         }
-      }
-    },
-    "interface_nets": {
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR_0",
-          "processing_system7_0/DDR"
-        ]
       },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO_0",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "processing_system7_0_GPIO_0": {
-        "interface_ports": [
-          "GPIO_0_0",
-          "processing_system7_0/GPIO_0"
-        ]
-      },
-      "processing_system7_0_USBIND_0": {
-        "interface_ports": [
-          "USBIND_0_0",
-          "processing_system7_0/USBIND_0"
-        ]
+      "task3_0": {
+        "vlnv": "xilinx.com:module_ref:task3:1.0",
+        "xci_name": "design_1_task3_0_2",
+        "xci_path": "ip/design_1_task3_0_2/design_1_task3_0_2.xci",
+        "inst_hier_path": "task3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "task3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "opcode": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "in2": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "in0": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "result": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "done": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
@@ -2038,41 +1766,29 @@
       "in0_slice_Dout": {
         "ports": [
           "in0_slice/Dout",
-          "task3_0/in0",
-          "in0_1_2_concat/In0"
+          "in0_1_2_concat/In0",
+          "task3_0/in0"
         ]
       },
       "in1_slice_Dout": {
         "ports": [
           "in1_slice/Dout",
-          "task3_0/in1",
-          "in0_1_2_concat/In1"
+          "in0_1_2_concat/In1",
+          "task3_0/in1"
         ]
       },
       "in2_slice_Dout": {
         "ports": [
           "in2_slice/Dout",
-          "task3_0/in2",
-          "in0_1_2_concat/In2"
+          "in0_1_2_concat/In2",
+          "task3_0/in2"
         ]
       },
       "opcode_slice_Dout": {
         "ports": [
           "opcode_slice/Dout",
-          "task3_0/opcode",
-          "concat_out_52/In3"
-        ]
-      },
-      "processing_system7_0_FCLK_CLK0": {
-        "ports": [
-          "processing_system7_0/FCLK_CLK0",
-          "FCLK_CLK0_0"
-        ]
-      },
-      "processing_system7_0_FCLK_RESET0_N": {
-        "ports": [
-          "processing_system7_0/FCLK_RESET0_N",
-          "FCLK_RESET0_N_0"
+          "concat_out_52/In3",
+          "task3_0/opcode"
         ]
       },
       "processing_system7_0_GPIO_O": {
