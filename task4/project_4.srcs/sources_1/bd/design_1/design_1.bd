@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA6ECBD419E527899",
+      "boundary_crc": "0x35DB28D4BF2BECDE",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../project_4.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -196,32 +196,6 @@
       }
     },
     "ports": {
-      "clk": {
-        "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "design_1_clk_0",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
-      },
       "reset_btn": {
         "type": "rst",
         "direction": "I",
